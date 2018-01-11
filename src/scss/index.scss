@@ -1,40 +1,119 @@
-html, body {
+.container {
   height: 100%;
   margin: 0;
 }
 
+.hide-mob {
+  @media screen and (max-width: 738px) {
+    display: none;
+  }
+}
+
+h1 {
+  margin: 0;
+  text-align: center;
+  font-family: 'Satisfy', cursive;
+  @media screen and (min-width: 1000px) {
+    font-size: 150px;
+  }
+  @media screen and (max-width: 1000px) {
+    font-size: 120px;
+  }
+}
+
+h2 {
+  text-align: center;
+  font-family: 'Kaushan Script', cursive;
+  margin: 0 auto;
+}
+
+.headline {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  margin-left: -40%;
+  margin-top: -18%;
+  z-index: 10;
+  overflow: hidden;
+}
+
+.next {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  width: 80%;
+  margin-left: -40%;
+  text-align: center;
+  font-size: 65px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  top: 50%;
+  padding-left: 15%;
+  padding-right: 15%;
+  margin-top: -55%;
+  padding-top: 55%;
+  margin-bottom: -50%;
+  padding-bottom: 50%;
+  width: 70%;
+  color: #fff;
+  text-shadow: 0px 0px 5px #a4b8ff;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
 .card {
+  position: relative;
+  z-index: 2;
   &.c1 {
     height: 100%;
-    background-color: red;
-    font-size: 36px
+    background-color: white;
   }
+  min-height: 500px;
+  font-size: 36px;
   &.c2 {
-    height: 1000px;
-    background-color: blue;
-    font-size: 36px
+    background-color: #a4b8ff;
   }
   &.c3 {
-    height: 1000px;
-    background-color: green;
-    font-size: 36px
+    background-color: #a4ffaa;
+  }
+  &.c4 {
+    background-color: #eae550;
+  }
+  &.c5 {
+    background-color: #ea7b95;
+    height: 100%;
   }
 }
 
 .parallax {
+  z-index: 0;
   &.p1 {
     /* The image used */
-    background-image: url("http://materializecss.com/images/parallax1.jpg");
+    background-image: url("../img/1.jpg");
   }
 
   &.p2 {
     /* The image used */
-    background-image: url("http://materializecss.com/images/parallax2.jpg");
+    background-image: url("../img/2.jpg");
+  }
+
+  &.p3 {
+    /* The image used */
+    background-image: url("../img/3.jpg");
+  }
+
+  &.p4 {
+    /* The image used */
+    background-image: url("../img/4.jpg");
   }
 
   /* Set a specific height */
   min-height: 500px;
-
+  position: relative;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;

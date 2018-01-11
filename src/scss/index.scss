@@ -1,0 +1,43 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.card {
+  &.c1 {
+    height: 100%;
+    background-color: red;
+    font-size: 36px
+  }
+  &.c2 {
+    height: 1000px;
+    background-color: blue;
+    font-size: 36px
+  }
+  &.c3 {
+    height: 1000px;
+    background-color: green;
+    font-size: 36px
+  }
+}
+
+.parallax {
+  &.p1 {
+    /* The image used */
+    background-image: url("http://materializecss.com/images/parallax1.jpg");
+  }
+
+  &.p2 {
+    /* The image used */
+    background-image: url("http://materializecss.com/images/parallax2.jpg");
+  }
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

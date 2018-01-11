@@ -55,10 +55,10 @@ h2 {
   top: 50%;
   padding-left: 15%;
   padding-right: 15%;
-  margin-top: -55%;
-  padding-top: 55%;
-  margin-bottom: -50%;
-  padding-bottom: 50%;
+  margin-top: -75%;
+  padding-top: 75%;
+  margin-bottom: -70%;
+  padding-bottom: 70%;
   width: 70%;
   color: #fff;
   text-shadow: 0px 0px 5px #a4b8ff;
@@ -66,6 +66,83 @@ h2 {
 }
 
 .card {
+  &.card1 {
+    top: 40px;
+    left: 20%;
+    .avatar {
+      margin-left: -95px;
+      width: 190px;
+      height: 190px;
+      border-radius: 50%;
+    }
+    border-top-right-radius: 95px;
+    border-bottom-right-radius: 95px;
+    h4 {
+      margin-top: 25px;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+  }
+  &.card2 {
+    top: 270px;
+    right: 20%;
+    text-align: right;
+    .avatar {
+      margin-right: -95px;
+      width: 190px;
+      height: 190px;
+      border-radius: 50%;
+    }
+    border-top-left-radius: 95px;
+    border-bottom-left-radius: 95px;
+    h4 {
+      margin-top: 25px;
+      position: absolute;
+      top: 0;
+      right: 50%;
+      transform: translate(50%, 0);
+    }
+  }
+  position: absolute;
+  h4 {
+    font-family: "思源黑体","Noto Sans","Noto Sans CJK SC","文泉驿微米黑","WenQuanYi Micro Hei","方正兰亭黑","Helvetica Neue",Helvetica,Arial,PingFangTC-Light,"Microsoft YaHei",微软雅黑,"STHeiti Light",STXihei,"华文细黑",Heiti,黑体,sans-serif;
+    font-weight: 200;
+  }
+  p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 0.25rem;
+    font-size: 14px;
+    transform: translate(-50%, 0);
+    overflow: hidden;
+  }
+  a {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    margin-top: 0.25rem;
+    font-size: 18px;
+    transform: translate(-50%, 0);
+  }
+  min-width: 400px;
+  width: 50%;
+  max-width: 500px;
+  height: 190px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.memicon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Rock Salt', cursive;
+}
+
+.cover {
   position: relative;
   z-index: 2;
   &.c1 {

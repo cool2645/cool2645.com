@@ -39,28 +39,34 @@ class MobApp extends React.Component {
                     <div className="swiper-slide no-margin">
                         <div className="cover c7 c7-1">
                             <div className="card card1">
-                                <img className="avatar left" src="https://avatars2.githubusercontent.com/u/18373361" />
-                                <h4>梨子</h4>
-                                <p className="left">こんなに好きなことは内緒なの</p>
-                                <a className="link" href="https://rikako.moe"><i className="fa fa-link" aria-hidden="true"></i> rikako.moe</a>
+                                <img className="avatar left" src="https://upload.wikimedia.org/wikipedia/en/f/f4/Baidu.svg" />
+                                <h4>手机百度</h4>
+                                <p className="left">整洁干净的手机百度首页！</p>
+                                <a className="link" href="https://www.baiddu.org"><i className="fa fa-link" aria-hidden="true"></i> baiddu.org</a>
                             </div>
                             <div className="card card2">
-                                <img className="avatar right" src="https://avatars2.githubusercontent.com/u/18373361" />
-                                <h4>梨子</h4>
-                                <p className="right">こんなに好きなことは内緒なの</p>
-                                <a className="link" href="https://rikako.moe"><i className="fa fa-link" aria-hidden="true"></i> rikako.moe</a>
+                                <img className="avatar right" src="https://nanjoyoshino.moe/img/n.jpg" />
+                                <h4>Twitter 机器人</h4>
+                                <p className="right">用专门的网站来同步你的推文</p>
+                                <span className="link">
+                                    <a href="https://nanjoyoshino.moe"><i className="fa fa-link" aria-hidden="true"></i> Nanjo</a> {" "}
+                                    <a href="https://soramaru.moe/"><i className="fa fa-link" aria-hidden="true"></i> Tokui</a>
+                                </span>
                             </div>
                             <div className="card card3">
-                                <img className="avatar left" src="https://avatars2.githubusercontent.com/u/18373361" />
-                                <h4>梨子</h4>
-                                <p className="left">こんなに好きなことは内緒なの</p>
-                                <a className="link" href="https://rikako.moe"><i className="fa fa-link" aria-hidden="true"></i> rikako.moe</a>
+                                <img className="avatar left" src="http://www.gravatar.com/avatar/02e74f10e0327ad868d138f2b4fdd6f0?s=64&d=identicon" />
+                                <h4>Minawiki</h4>
+                                <p className="left">有强大评论功能的维基系统</p>
+                                <a className="link" href="http://wiki.cool2645.cc"><i className="fa fa-link" aria-hidden="true"></i> Demo</a>
                             </div>
                             <div className="card card4">
-                                <img className="avatar right" src="https://avatars2.githubusercontent.com/u/18373361" />
-                                <h4>梨子</h4>
-                                <p className="right">こんなに好きなことは内緒なの</p>
-                                <a className="link" href="https://rikako.moe"><i className="fa fa-link" aria-hidden="true"></i> rikako.moe</a>
+                                <img className="avatar right" src="https://raw.githubusercontent.com/cool2645/neu-ipgw_linux/master/ipgw.png" />
+                                <h4>NEU-IPGW</h4>
+                                <p className="right">东北大学(沈阳) IP 网关客户端</p>
+                                <span className="link">
+                                    <a href="https://github.com/cool2645/neu-ipgw"><i className="fa fa-link" aria-hidden="true"></i> PC</a> {" "}
+                                    <a href="https://github.com/cool2645/neu-ipgw_linux"><i className="fa fa-link" aria-hidden="true"></i> Linux</a>
+                                </span>
                             </div>
                             <div className="mem icon">
                                 Works
@@ -70,28 +76,31 @@ class MobApp extends React.Component {
                     <div className="swiper-slide no-margin">
                         <div className="cover c7 c7-2">
                             <div className="card card1">
-                                <img className="avatar right" src="https://avatars2.githubusercontent.com/u/18373361" />
-                                <h4>梨子</h4>
-                                <p className="right">こんなに好きなことは内緒なの</p>
-                                <a className="link" href="https://rikako.moe"><i className="fa fa-link" aria-hidden="true"></i> rikako.moe</a>
+                                <img className="avatar right" src="https://gogs.io/img/favicon.ico" />
+                                <h4>Git</h4>
+                                <p className="right">允许私有的 Git 代码托管</p>
+                                <a className="link" href="https://git.cool2645.com"><i className="fa fa-link" aria-hidden="true"></i> git.</a>
                             </div>
                             <div className="card card2">
-                                <img className="avatar left" src="https://avatars2.githubusercontent.com/u/18373361" />
-                                <h4>梨子</h4>
-                                <p className="left">こんなに好きなことは内緒なの</p>
-                                <a className="link" href="https://rikako.moe"><i className="fa fa-link" aria-hidden="true"></i> rikako.moe</a>
+                                <img className="avatar left" src="http://www.free-icons-download.net/images/cloud-logo-icon-22859.png" />
+                                <h4>贴吧云签到</h4>
+                                <p className="left">百度贴吧云签到服务</p>
+                                <span className="link">
+                                    <a href="http://kl.cool2645.com"><i className="fa fa-link" aria-hidden="true"></i> 酷乐</a> {" "}
+                                    <a href="http://ky.cool2645.com"><i className="fa fa-link" aria-hidden="true"></i> 酷优</a>
+                                </span>
                             </div>
                             <div className="card card3">
-                                <img className="avatar right" src="https://avatars2.githubusercontent.com/u/18373361" />
-                                <h4>梨子</h4>
-                                <p className="right">こんなに好きなことは内緒なの</p>
-                                <a className="link" href="https://rikako.moe"><i className="fa fa-link" aria-hidden="true"></i> rikako.moe</a>
+                                <img className="avatar right" src="https://cdn4.iconfinder.com/data/icons/simple-soft/512/open_mail-128.png" />
+                                <h4>邮件</h4>
+                                <p className="right">2645 工作室域名邮箱</p>
+                                <a className="link" href="https://mail.cool2645.com"><i className="fa fa-link" aria-hidden="true"></i> mail.</a>
                             </div>
                             <div className="card card4">
-                                <img className="avatar left" src="https://avatars2.githubusercontent.com/u/18373361" />
-                                <h4>梨子</h4>
-                                <p className="left">こんなに好きなことは内緒なの</p>
-                                <a className="link" href="https://rikako.moe"><i className="fa fa-link" aria-hidden="true"></i> rikako.moe</a>
+                                <img className="avatar left" src="https://prometheus.atlas-sys.com/download/attachments/116130109/update02.png" />
+                                <h4>自动更新</h4>
+                                <p className="left">2645 软件自动更新服务</p>
+                                <a className="link" href="http://update.cool2645.com"><i className="fa fa-link" aria-hidden="true"></i> update.</a>
                             </div>
                             <div className="mem icon">
                                 Services
@@ -103,6 +112,7 @@ class MobApp extends React.Component {
                             <h4>喜欢就给个赞吧！</h4>
                             <h3><a href="javascript:;"><i className="fa fa-heart" aria-hidden="true"></i> 264526</a></h3>
                             <ul>
+                                <li><a href="https://blog.cool2645.com"><i className="fa fa-rss-square" aria-hidden="true"></i></a></li>
                                 <li><a href="mailto:wangkule@cool2645.com"><i className="fa fa-envelope" aria-hidden="true"></i></a></li>
                                 <li><a href="https://github.com/cool2645"><i className="fa fa-github" aria-hidden="true"></i></a></li>
                                 <li><a href="https://gitlab.com/2645"><i className="fa fa-gitlab" aria-hidden="true"></i></a></li>

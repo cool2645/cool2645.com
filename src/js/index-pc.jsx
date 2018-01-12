@@ -129,6 +129,7 @@ class PCApp extends React.Component {
                     <h4>如果你喜欢，就请给个赞吧！</h4>
                     <h3><a href="javascript:;"><i className="fa fa-heart" aria-hidden="true"></i> 264526</a></h3>
                     <ul>
+                        <li><a href="https://blog.cool2645.com"><i className="fa fa-rss-square" aria-hidden="true"></i></a></li>
                         <li><a href="mailto:wangkule@cool2645.com"><i className="fa fa-envelope" aria-hidden="true"></i></a></li>
                         <li><a href="https://github.com/cool2645"><i className="fa fa-github" aria-hidden="true"></i></a></li>
                         <li><a href="https://gitlab.com/2645"><i className="fa fa-gitlab" aria-hidden="true"></i></a></li>

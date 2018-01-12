@@ -199,8 +199,10 @@ h2 {
   &.work,.serv {
     position: absolute;
     top: 7.5%;
+    width: 100%;
     left: 50%;
     transform: translate(-50%, 0);
+    text-align: center;
   }
   font-family: 'Rock Salt', cursive;
 }

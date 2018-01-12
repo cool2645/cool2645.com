@@ -56,7 +56,6 @@ window.arrangeCards = function (c) {
     else
          k = Math.floor((W - 2 * x + m)/(x + m));
     let lambda = (W - k * (x + m) - x) / (x * (1 - Math.pow(0.5, n - k - 1)));
-    console.log(k);
     for (let i = 0; i < k; ++i) {
         $(c + " .card").eq(i).css('z-index', 10 + n - i);
         $(c + " .card").eq(i).css('left', ((x + m) * i).toString() + 'px')

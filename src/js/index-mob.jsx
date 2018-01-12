@@ -22,13 +22,13 @@ class MobApp extends React.Component {
                             <div className="card card1">
                                 <img className="avatar" src="https://avatars0.githubusercontent.com/u/18445295" />
                                 <h4>Bittersweet</h4>
-                                <p>μ'sic forever~</p>
+                                <p className="left">μ'sic forever~</p>
                                 <a className="link" href="javascript:;"><i className="fa fa-link" aria-hidden="true"></i> yosoro!</a>
                             </div>
                             <div className="card card2">
                                 <img className="avatar" src="https://avatars2.githubusercontent.com/u/18373361" />
                                 <h4>梨子</h4>
-                                <p>こんなに好きなことは内緒なの</p>
+                                <p className="right">こんなに好きなことは内緒なの</p>
                                 <a className="link" href="https://rikako.moe"><i className="fa fa-link" aria-hidden="true"></i> rikako.moe</a>
                             </div>
                             <div className="mem icon">
@@ -41,25 +41,25 @@ class MobApp extends React.Component {
                             <div className="card card1">
                                 <img className="avatar left" src="https://avatars2.githubusercontent.com/u/18373361" />
                                 <h4>梨子</h4>
-                                <p>こんなに好きなことは内緒なの</p>
+                                <p className="left">こんなに好きなことは内緒なの</p>
                                 <a className="link" href="https://rikako.moe"><i className="fa fa-link" aria-hidden="true"></i> rikako.moe</a>
                             </div>
                             <div className="card card2">
                                 <img className="avatar right" src="https://avatars2.githubusercontent.com/u/18373361" />
                                 <h4>梨子</h4>
-                                <p>こんなに好きなことは内緒なの</p>
+                                <p className="right">こんなに好きなことは内緒なの</p>
                                 <a className="link" href="https://rikako.moe"><i className="fa fa-link" aria-hidden="true"></i> rikako.moe</a>
                             </div>
                             <div className="card card3">
                                 <img className="avatar left" src="https://avatars2.githubusercontent.com/u/18373361" />
                                 <h4>梨子</h4>
-                                <p>こんなに好きなことは内緒なの</p>
+                                <p className="left">こんなに好きなことは内緒なの</p>
                                 <a className="link" href="https://rikako.moe"><i className="fa fa-link" aria-hidden="true"></i> rikako.moe</a>
                             </div>
                             <div className="card card4">
                                 <img className="avatar right" src="https://avatars2.githubusercontent.com/u/18373361" />
                                 <h4>梨子</h4>
-                                <p>こんなに好きなことは内緒なの</p>
+                                <p className="right">こんなに好きなことは内緒なの</p>
                                 <a className="link" href="https://rikako.moe"><i className="fa fa-link" aria-hidden="true"></i> rikako.moe</a>
                             </div>
                             <div className="mem icon">
@@ -72,25 +72,25 @@ class MobApp extends React.Component {
                             <div className="card card1">
                                 <img className="avatar right" src="https://avatars2.githubusercontent.com/u/18373361" />
                                 <h4>梨子</h4>
-                                <p>こんなに好きなことは内緒なの</p>
+                                <p className="right">こんなに好きなことは内緒なの</p>
                                 <a className="link" href="https://rikako.moe"><i className="fa fa-link" aria-hidden="true"></i> rikako.moe</a>
                             </div>
                             <div className="card card2">
                                 <img className="avatar left" src="https://avatars2.githubusercontent.com/u/18373361" />
                                 <h4>梨子</h4>
-                                <p>こんなに好きなことは内緒なの</p>
+                                <p className="left">こんなに好きなことは内緒なの</p>
                                 <a className="link" href="https://rikako.moe"><i className="fa fa-link" aria-hidden="true"></i> rikako.moe</a>
                             </div>
                             <div className="card card3">
                                 <img className="avatar right" src="https://avatars2.githubusercontent.com/u/18373361" />
                                 <h4>梨子</h4>
-                                <p>こんなに好きなことは内緒なの</p>
+                                <p className="right">こんなに好きなことは内緒なの</p>
                                 <a className="link" href="https://rikako.moe"><i className="fa fa-link" aria-hidden="true"></i> rikako.moe</a>
                             </div>
                             <div className="card card4">
                                 <img className="avatar left" src="https://avatars2.githubusercontent.com/u/18373361" />
                                 <h4>梨子</h4>
-                                <p>こんなに好きなことは内緒なの</p>
+                                <p className="left">こんなに好きなことは内緒なの</p>
                                 <a className="link" href="https://rikako.moe"><i className="fa fa-link" aria-hidden="true"></i> rikako.moe</a>
                             </div>
                             <div className="mem icon">

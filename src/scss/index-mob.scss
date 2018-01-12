@@ -126,6 +126,13 @@
     background-color: rgba(255, 255, 255, 0.3);
   }
 
+  p.left {
+    margin-left: 32px;
+  }
+  p.right {
+    margin-left: -32px;
+  }
+
   .c7-1 {
     background-color: #a4ffaa;
   }
@@ -170,13 +177,13 @@
       margin-bottom: 0;
       font-family: "思源黑体", "Noto Sans", "Noto Sans CJK SC", "文泉驿微米黑", "WenQuanYi Micro Hei", "方正兰亭黑", "Helvetica Neue", Helvetica, Arial, PingFangTC-Light, "Microsoft YaHei", 微软雅黑, "STHeiti Light", STXihei, "华文细黑", Heiti, 黑体, sans-serif;
       font-weight: 200;
-      font-size: 25px;
+      font-size: 1.1rem;
     }
     p {
       position: absolute;
       top: 40%;
       left: 50%;
-      margin-top: 0.25rem;
+      margin-top: 0;
       width: 80%;
       font-size: 14px;
       transform: translate(-50%, 0);

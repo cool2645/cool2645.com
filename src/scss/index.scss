@@ -197,7 +197,13 @@ h2 {
 }
 
 .c3 .card {
-
+  position: absolute;
+  top: 50px;
+  width: 250px;
+  height: 400px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px #000;
 }
 
 .cover {
@@ -215,6 +221,13 @@ h2 {
   }
   &.c3 {
     background-color: #a4ffaa;
+    padding-right: 10%;
+    padding-left: 10%;
+    overflow: hidden;
+    .ov {
+      position: relative;
+      right: 0;
+    }
   }
   &.c4 {
     background-color: #eae550;

@@ -6,6 +6,10 @@ window.onscroll = function(){
     console.log(document.getElementById("p1BlackBoard").style.top );
     document.getElementById("p2BlackBoard").style.top = (100-(window.pageYOffset-1000)/speed) + "%";
     console.log(document.getElementById("p2BlackBoard").style.top );
+    document.getElementById("p3BlackBoard").style.top = (100-(window.pageYOffset-2000)/speed) + "%";
+    console.log(document.getElementById("p2BlackBoard").style.top );
+    document.getElementById("p4BlackBoard").style.top = (100-(window.pageYOffset-3000)/speed) + "%";
+    console.log(document.getElementById("p2BlackBoard").style.top );
     let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
     if(scrollTop > 1000){
         $(".card1").css('left','20%');
@@ -29,8 +33,9 @@ window.onresize = window.onload = function () {
         $(".ov").css('margin-left', (document.body.clientWidth * 0.8 - w) / 2);
     else
         $(".ov").css('margin-left',  0);
-    rate = w / (document.body.clientWidth * 0.8) - 1
-    window.arrangeCards();
+    rate = w / (document.body.clientWidth * 0.8) - 1;
+    window.arrangeCards(".c3");
+    window.arrangeCards(".c4");
 };
 
 document.onmousemove = function (e) {
@@ -39,12 +44,13 @@ document.onmousemove = function (e) {
         $(".ov").css('margin-left', (document.body.clientWidth * 0.8 - w) / 2);
     else if (e.pageX) {
         $(".ov").css('margin-left',  (document.body.clientWidth * 0.1 - e.pageX) * rate);
-        window.arrangeCards();
+        window.arrangeCards(".c3");
+        window.arrangeCards(".c4");
     }
-}
+};
 
-window.arrangeCards = function () {
-    let W = $(".c3 .card").eq(0).parent().width();
+window.arrangeCards = function (c) {
+    let W = $(c + " .card").eq(0).parent().width();
     if (W > x * n + m * (n - 1))
          k = n;
     else
@@ -52,12 +58,12 @@ window.arrangeCards = function () {
     let lambda = (W - k * (x + m) - x) / (x * (1 - Math.pow(0.5, n - k - 1)));
     console.log(k);
     for (let i = 0; i < k; ++i) {
-        $(".c3 .card").eq(i).css('z-index', 10 + n - i);
-        $(".c3 .card").eq(i).css('left', ((x + m) * i).toString() + 'px')
+        $(c + " .card").eq(i).css('z-index', 10 + n - i);
+        $(c + " .card").eq(i).css('left', ((x + m) * i).toString() + 'px')
     }
     for (let i = k; i < n; ++i) {
-        $(".c3 .card").eq(i).css('z-index', 10 + n - i);
-        $(".c3 .card").eq(i).css('left', ((x + m) * k + (
+        $(c + " .card").eq(i).css('z-index', 10 + n - i);
+        $(c + " .card").eq(i).css('left', ((x + m) * k + (
             x * lambda * (1 - Math.pow(0.5, i - k)) < (x + m) * (i - k) ?
                 x * lambda * (1 - Math.pow(0.5, i - k)) : (x + m) * (i - k)
         )).toString() + 'px')

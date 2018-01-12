@@ -70,15 +70,51 @@ h2 {
   left: 0;
 }
 
-.card {
+.c2 .card {
+  .avatarBoard {
+    div {
+      display: none;
+      top: 50%;
+      position: absolute;
+      transform: translate(0, -50%);
+      overflow: hidden;
+      padding-left: 10%;
+      padding-right: 10%;
+      width: 80%;
+      text-align: center;
+      ul {
+        font-size: medium;
+        list-style: none;
+        padding: 0;
+        li {
+          margin-top: 0.25rem;
+          margin-bottom: 0.25rem;
+          a {
+            font-family: 'STHeiti', 'Microsoft YaHei', 'Ping Fang', 'WenQuanYi Micro Hei';
+            text-decoration: none;
+            color: #000;
+          }
+        }
+      }
+    }
+  }
+  .avatarBoard:hover {
+    div {
+      display: block;
+    }
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+  .avatar {
+    position: absolute;
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+  }
   &.card1 {
     top: 40px;
-    left: 20%;
+    left: -20%;
     .avatar {
       margin-left: -95px;
-      width: 190px;
-      height: 190px;
-      border-radius: 50%;
     }
     border-top-right-radius: 95px;
     border-bottom-right-radius: 95px;
@@ -89,16 +125,17 @@ h2 {
       left: 50%;
       transform: translate(-50%, 0);
     }
+    width: 0;
+    max-width: 600px;
+    transition: left .5s, width .5s ease .5s;
   }
   &.card2 {
     top: 270px;
-    right: 20%;
+    right: -20%;
     text-align: right;
     .avatar {
+      right: 0;
       margin-right: -95px;
-      width: 190px;
-      height: 190px;
-      border-radius: 50%;
     }
     border-top-left-radius: 95px;
     border-bottom-left-radius: 95px;
@@ -109,11 +146,15 @@ h2 {
       right: 50%;
       transform: translate(50%, 0);
     }
+    width: 0;
+    max-width: 600px;
+    transition: right .5s, width .5s ease .5s;
   }
   position: absolute;
   h4 {
     font-family: "思源黑体","Noto Sans","Noto Sans CJK SC","文泉驿微米黑","WenQuanYi Micro Hei","方正兰亭黑","Helvetica Neue",Helvetica,Arial,PingFangTC-Light,"Microsoft YaHei",微软雅黑,"STHeiti Light",STXihei,"华文细黑",Heiti,黑体,sans-serif;
     font-weight: 200;
+    opacity: 0;
   }
   p {
     position: absolute;
@@ -124,8 +165,9 @@ h2 {
     transform: translate(-50%, 0);
     overflow: hidden;
     font-family: 'STHeiti', 'Microsoft YaHei', 'Ping Fang', 'WenQuanYi Micro Hei';
+    opacity: 0;
   }
-  a {
+  a.link {
     position: absolute;
     top: 70%;
     left: 50%;
@@ -133,17 +175,15 @@ h2 {
     font-size: 16px;
     transform: translate(-50%, 0);
     text-decoration: none;
-    transition-duration: .2s;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     color: #888;
+    text-shadow: 0px 0px 4px #ccc;
     &:hover {
       color: #aaa;
       transition-duration: 200ms;
     }
+    opacity: 0;
   }
-  min-width: 400px;
-  width: 50%;
-  max-width: 500px;
   height: 190px;
   background-color: rgba(255, 255, 255, 0.3);
 }
@@ -156,9 +196,14 @@ h2 {
   font-family: 'Rock Salt', cursive;
 }
 
+.c3 .card {
+
+}
+
 .cover {
   position: relative;
   z-index: 2;
+  overflow: hidden;
   &.c1 {
     height: 100%;
     background-color: white;

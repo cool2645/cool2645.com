@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 class PCApp extends React.Component {
     render() {
         return (
-            <div className="hide-mob container">
+            <div className="hide-mob no-margin">
                 <div className="cover c1">
                     <div className="headline">
                         <h1>2645 Studio</h1>

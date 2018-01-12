@@ -1,0 +1,258 @@
+.hide-pc {
+  .cover {
+    height: 100%;
+    text-align: center;
+  }
+  .icon {
+    &.mem {
+      position: absolute;
+      top: 47.5%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 45px;
+    }
+    font-family: 'Rock Salt', cursive;
+  }
+
+  .c1 {
+    color: rgba(0, 0, 0, 0.87);
+  }
+
+  h1 {
+    margin: 0;
+    text-align: center;
+    line-height: 110%;
+    font-family: 'Satisfy', cursive;
+    font-size: 120px;
+    font-weight: 400;
+  }
+
+  h2 {
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+    margin: 0 auto !important;
+  }
+
+  h4 {
+    font-size: 2.28rem;
+    line-height: 110%;
+    margin: 1.14rem 0 .912rem 0;
+  }
+
+  .headline {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    width: 80%;
+    margin-left: -40%;
+    margin-top: -18%;
+    z-index: 10;
+    overflow: hidden;
+  }
+
+  .next {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    width: 80%;
+    margin-left: -40%;
+    text-align: center;
+    font-size: 65px;
+  }
+
+  .c6 {
+    background-color: #a4b8ff;
+  }
+  .c6 .card {
+    box-shadow: none !important;
+    .avatar {
+      position: absolute;
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      top: 50%;
+      transform: translate(0, -50%);
+    }
+    left: 10%;
+    border-radius: 95px;
+    width: 80%;
+    transform: translate(0, -50%);
+    &.card1 {
+      top: 27.5%;
+      .avatar {
+        left: 0;
+      }
+    }
+    &.card2 {
+      top: 67.5%;
+      .avatar {
+        right: 0;
+      }
+    }
+    position: absolute;
+    h4 {
+      margin-top: 40px;
+      font-family: "思源黑体", "Noto Sans", "Noto Sans CJK SC", "文泉驿微米黑", "WenQuanYi Micro Hei", "方正兰亭黑", "Helvetica Neue", Helvetica, Arial, PingFangTC-Light, "Microsoft YaHei", 微软雅黑, "STHeiti Light", STXihei, "华文细黑", Heiti, 黑体, sans-serif;
+      font-weight: 200;
+    }
+    p {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: 0.25rem;
+      width: 80%;
+      font-size: 14px;
+      transform: translate(-50%, 0);
+      overflow: hidden;
+      font-family: 'STHeiti', 'Microsoft YaHei', 'Ping Fang', 'WenQuanYi Micro Hei';
+    }
+    a.link {
+      position: absolute;
+      top: 70%;
+      left: 50%;
+      margin-top: 0.25rem;
+      font-size: 16px;
+      transform: translate(-50%, 0);
+      text-decoration: none;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      color: #888;
+      text-shadow: 0px 0px 4px #ccc;
+      &:hover {
+        color: #aaa;
+        transition-duration: 200ms;
+      }
+    }
+    height: 190px;
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+
+  .c7-1 {
+    background-color: #a4ffaa;
+  }
+  .c7-2 {
+    background-color: #eae550;
+  }
+  .c7 .card {
+    box-shadow: none !important;
+    .avatar {
+      position: absolute;
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      top: 50%;
+      transform: translate(0, -50%);
+    }
+    left: 10%;
+    border-radius: 95px;
+    width: 80%;
+    transform: translate(0, -50%);
+    .avatar.left {
+      left: 0;
+    }
+    .avatar.right {
+      right: 0;
+    }
+    &.card1 {
+      top: 12.5%;
+    }
+    &.card2 {
+      top: 32.5%;
+    }
+    &.card3 {
+      top: 62.5%;
+    }
+    &.card4 {
+      top: 82.5%;
+    }
+    position: absolute;
+    h4 {
+      margin-top: 3%;
+      margin-bottom: 0;
+      font-family: "思源黑体", "Noto Sans", "Noto Sans CJK SC", "文泉驿微米黑", "WenQuanYi Micro Hei", "方正兰亭黑", "Helvetica Neue", Helvetica, Arial, PingFangTC-Light, "Microsoft YaHei", 微软雅黑, "STHeiti Light", STXihei, "华文细黑", Heiti, 黑体, sans-serif;
+      font-weight: 200;
+      font-size: 25px;
+    }
+    p {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      margin-top: 0.25rem;
+      width: 80%;
+      font-size: 14px;
+      transform: translate(-50%, 0);
+      overflow: hidden;
+      font-family: 'STHeiti', 'Microsoft YaHei', 'Ping Fang', 'WenQuanYi Micro Hei';
+    }
+    a.link {
+      position: absolute;
+      top: 65%;
+      left: 50%;
+      margin-top: 0.25rem;
+      font-size: 16px;
+      transform: translate(-50%, 0);
+      text-decoration: none;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      color: #888;
+      text-shadow: 0px 0px 4px #ccc;
+      &:hover {
+        color: #aaa;
+        transition-duration: 200ms;
+      }
+    }
+    height: 15%;
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  .c8 {
+    background-color: #ea7b95;
+    h4 {
+      text-align: center;
+      top: 20%;
+      left: 50%;
+      width: 100%;
+      transform: translate(-50%, 0);
+      position: absolute;
+    }
+    h3 {
+      text-align: center;
+      top: 37.5%;
+      left: 50%;
+      width: 100%;
+      transform: translate(-50%, 0);
+      position: absolute;
+      font-size: 70px;
+      margin-top: 30px;
+      a {
+        font-family: "serif";
+        text-decoration: none;
+        color: #000;
+        &:hover {
+          color: #fff;
+          transition: color, .5s;
+        }
+      }
+    }
+    ul {
+      position: absolute;
+      list-style: none;
+      padding-left: 0;
+      top: 72.5%;
+      left: 50%;
+      width: 100%;
+      text-align: center;
+      transform: translate(-50%, 0);
+      font-size: 30px;
+      li {
+        display: inline;
+        line-height: 40px;
+        margin: 0 1rem;
+        a {
+          text-decoration: none;
+          color: #000;
+        }
+      }
+    }
+  }
+  .swiper-pagination-bullet-active {
+    background: #fff;
+  }
+}

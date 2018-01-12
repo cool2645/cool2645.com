@@ -18,7 +18,8 @@ function onPCIndexScroll(){
 };
 
 function onPCIndexResize () {
-    if (document.body.clientWidth < 738)
+    let rate = w / (document.body.clientWidth * 0.8) - 1;
+    if (document.body.clientWidth < 738 || document.body.clientHeight > document.body.clientWidth)
         render();
     if(document.body.clientWidth * 0.8 > (n * x + m * (n - 1)))
         $(".ov").css('margin-left', (document.body.clientWidth * 0.8 - w) / 2);
@@ -34,9 +35,9 @@ let m = 20;
 let n = 7;
 let k;
 let w = (n * x + m * (n - 1));
-let rate = w / (document.body.clientWidth * 0.8) - 1;
 
 function onPCIndexMouseMove(e) {
+    let rate = w / (document.body.clientWidth * 0.8) - 1;
     e = e || window.event;
     if(document.body.clientWidth * 0.8 > (n * x + m * (n - 1)))
         $(".ov").css('margin-left', (document.body.clientWidth * 0.8 - w) / 2);

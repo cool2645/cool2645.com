@@ -11,7 +11,7 @@ module.exports = {
   },
   module: {
     loaders: [
-      { test: /\.jsx?$/,loader: "babel-loader",exclude: /(node_modules|bower_components)/ },
+      { test: /\.jsx?$/,loader: "babel-loader",exclude: /(node_modules|bower_components)/,query: { presets:['react'] } },
       { test: /\.scss$/,loader: "style-loader!css-loader!sass-loader" },
       { test: /\.css$/,loader: 'style-loader!css-loader' },
       { test: /\.(png|jpe?g|gif|svg)$/,loader: 'file-loader',options: { name: 'img/[name].[hash].[ext]' } },

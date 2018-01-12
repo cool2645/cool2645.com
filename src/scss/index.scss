@@ -7,339 +7,339 @@
   @media screen and (max-width: 738px) {
     display: none;
   }
-}
 
-h1 {
-  margin: 0;
-  text-align: center;
-  font-family: 'Satisfy', cursive;
-  @media screen and (min-width: 1000px) {
-    font-size: 150px;
+  h1 {
+    margin: 0;
+    text-align: center;
+    font-family: 'Satisfy', cursive;
+    @media screen and (min-width: 1000px) {
+      font-size: 150px;
+    }
+    @media screen and (max-width: 1000px) {
+      font-size: 120px;
+    }
   }
-  @media screen and (max-width: 1000px) {
-    font-size: 120px;
+
+  h2 {
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+    margin: 0 auto;
   }
-}
 
-h2 {
-  text-align: center;
-  font-family: 'Kaushan Script', cursive;
-  margin: 0 auto;
-}
+  .headline {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    margin-left: -40%;
+    margin-top: -18%;
+    z-index: 10;
+    overflow: hidden;
+  }
 
-.headline {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 80%;
-  margin-left: -40%;
-  margin-top: -18%;
-  z-index: 10;
-  overflow: hidden;
-}
+  .next {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    width: 80%;
+    margin-left: -40%;
+    text-align: center;
+    font-size: 65px;
+  }
 
-.next {
-  position: absolute;
-  top: 80%;
-  left: 50%;
-  width: 80%;
-  margin-left: -40%;
-  text-align: center;
-  font-size: 65px;
-}
+  .caption {
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    top: 50%;
+    padding-left: 15%;
+    padding-right: 15%;
+    width: 70%;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0px 0px 5px #a4b8ff;
+  }
 
-.caption {
-  position: absolute;
-  left: 0;
-  z-index: 1;
-  top: 50%;
-  padding-left: 15%;
-  padding-right: 15%;
-  width: 70%;
-  color: #fff;
-  text-align: center;
-  text-shadow: 0px 0px 5px #a4b8ff;
-}
+  .mask {
+    background-color: rgba(0, 0, 0, 0.25);
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+  }
 
-.mask {
-  background-color: rgba(0, 0, 0, 0.25);
-  z-index: -1;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  left: 0;
-}
-
-.c2 .card {
-  .avatarBoard {
-    div {
-      display: none;
-      top: 50%;
-      position: absolute;
-      transform: translate(0, -50%);
-      overflow: hidden;
-      padding-left: 10%;
-      padding-right: 10%;
-      width: 80%;
-      text-align: center;
-      ul {
-        font-size: medium;
-        list-style: none;
-        padding: 0;
-        li {
-          margin-top: 0.25rem;
-          margin-bottom: 0.25rem;
-          a {
-            font-family: 'STHeiti', 'Microsoft YaHei', 'Ping Fang', 'WenQuanYi Micro Hei';
-            text-decoration: none;
-            color: #000;
+  .c2 .card {
+    .avatarBoard {
+      div {
+        display: none;
+        top: 50%;
+        position: absolute;
+        transform: translate(0, -50%);
+        overflow: hidden;
+        padding-left: 10%;
+        padding-right: 10%;
+        width: 80%;
+        text-align: center;
+        ul {
+          font-size: medium;
+          list-style: none;
+          padding: 0;
+          li {
+            margin-top: 0.25rem;
+            margin-bottom: 0.25rem;
+            a {
+              font-family: 'STHeiti', 'Microsoft YaHei', 'Ping Fang', 'WenQuanYi Micro Hei';
+              text-decoration: none;
+              color: #000;
+            }
           }
         }
       }
     }
-  }
-  .avatarBoard:hover {
-    div {
-      display: block;
+    .avatarBoard:hover {
+      div {
+        display: block;
+      }
+      background-color: rgba(255, 255, 255, 0.7);
     }
-    background-color: rgba(255, 255, 255, 0.7);
-  }
-  .avatar {
-    position: absolute;
-    width: 190px;
-    height: 190px;
-    border-radius: 50%;
-  }
-  &.card1 {
-    top: 40px;
-    left: -20%;
     .avatar {
-      margin-left: -95px;
-    }
-    border-top-right-radius: 95px;
-    border-bottom-right-radius: 95px;
-    h4 {
-      margin-top: 25px;
       position: absolute;
-      top: 0;
+      width: 190px;
+      height: 190px;
+      border-radius: 50%;
+    }
+    &.card1 {
+      top: 40px;
+      left: -20%;
+      .avatar {
+        margin-left: -95px;
+      }
+      border-top-right-radius: 95px;
+      border-bottom-right-radius: 95px;
+      h4 {
+        margin-top: 25px;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+      }
+      width: 0;
+      max-width: 600px;
+      transition: left .5s, width .5s ease .5s;
+    }
+    &.card2 {
+      top: 270px;
+      right: -20%;
+      text-align: right;
+      .avatar {
+        right: 0;
+        margin-right: -95px;
+      }
+      border-top-left-radius: 95px;
+      border-bottom-left-radius: 95px;
+      h4 {
+        margin-top: 25px;
+        position: absolute;
+        top: 0;
+        right: 50%;
+        transform: translate(50%, 0);
+      }
+      width: 0;
+      max-width: 600px;
+      transition: right .5s, width .5s ease .5s;
+    }
+    position: absolute;
+    h4 {
+      font-family: "思源黑体", "Noto Sans", "Noto Sans CJK SC", "文泉驿微米黑", "WenQuanYi Micro Hei", "方正兰亭黑", "Helvetica Neue", Helvetica, Arial, PingFangTC-Light, "Microsoft YaHei", 微软雅黑, "STHeiti Light", STXihei, "华文细黑", Heiti, 黑体, sans-serif;
+      font-weight: 200;
+      opacity: 0;
+    }
+    p {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: 0.25rem;
+      font-size: 14px;
+      transform: translate(-50%, 0);
+      overflow: hidden;
+      font-family: 'STHeiti', 'Microsoft YaHei', 'Ping Fang', 'WenQuanYi Micro Hei';
+      opacity: 0;
+    }
+    a.link {
+      position: absolute;
+      top: 70%;
+      left: 50%;
+      margin-top: 0.25rem;
+      font-size: 16px;
+      transform: translate(-50%, 0);
+      text-decoration: none;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      color: #888;
+      text-shadow: 0px 0px 4px #ccc;
+      &:hover {
+        color: #aaa;
+        transition-duration: 200ms;
+      }
+      opacity: 0;
+    }
+    height: 190px;
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+
+  .icon {
+    &.mem {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    &.work, .serv {
+      position: absolute;
+      top: 7.5%;
+      width: 100%;
       left: 50%;
       transform: translate(-50%, 0);
+      text-align: center;
     }
-    width: 0;
-    max-width: 600px;
-    transition: left .5s, width .5s ease .5s;
+    font-family: 'Rock Salt', cursive;
   }
-  &.card2 {
-    top: 270px;
-    right: -20%;
-    text-align: right;
-    .avatar {
-      right: 0;
-      margin-right: -95px;
-    }
-    border-top-left-radius: 95px;
-    border-bottom-left-radius: 95px;
+
+  .c3 .card {
+    position: absolute;
+    top: 150px;
+    width: 250px;
+    height: 300px;
+    background-color: white;
+    border-radius: 10px;
+  }
+
+  .c4 .card {
+    position: absolute;
+    top: 175px;
+    width: 250px;
+    height: 250px;
+    background-color: white;
+    border-radius: 125px;
+  }
+
+  .c5 {
     h4 {
-      margin-top: 25px;
+      text-align: center;
+      top: 12.5%;
+      left: 50%;
+      width: 100%;
+      transform: translate(-50%, 0);
       position: absolute;
-      top: 0;
-      right: 50%;
-      transform: translate(50%, 0);
     }
-    width: 0;
-    max-width: 600px;
-    transition: right .5s, width .5s ease .5s;
-  }
-  position: absolute;
-  h4 {
-    font-family: "思源黑体","Noto Sans","Noto Sans CJK SC","文泉驿微米黑","WenQuanYi Micro Hei","方正兰亭黑","Helvetica Neue",Helvetica,Arial,PingFangTC-Light,"Microsoft YaHei",微软雅黑,"STHeiti Light",STXihei,"华文细黑",Heiti,黑体,sans-serif;
-    font-weight: 200;
-    opacity: 0;
-  }
-  p {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: 0.25rem;
-    font-size: 14px;
-    transform: translate(-50%, 0);
-    overflow: hidden;
-    font-family: 'STHeiti', 'Microsoft YaHei', 'Ping Fang', 'WenQuanYi Micro Hei';
-    opacity: 0;
-  }
-  a.link {
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    margin-top: 0.25rem;
-    font-size: 16px;
-    transform: translate(-50%, 0);
-    text-decoration: none;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    color: #888;
-    text-shadow: 0px 0px 4px #ccc;
-    &:hover {
-      color: #aaa;
-      transition-duration: 200ms;
-    }
-    opacity: 0;
-  }
-  height: 190px;
-  background-color: rgba(255, 255, 255, 0.3);
-}
-
-.icon {
-  &.mem {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  &.work,.serv {
-    position: absolute;
-    top: 7.5%;
-    width: 100%;
-    left: 50%;
-    transform: translate(-50%, 0);
-    text-align: center;
-  }
-  font-family: 'Rock Salt', cursive;
-}
-
-.c3 .card {
-  position: absolute;
-  top: 150px;
-  width: 250px;
-  height: 300px;
-  background-color: white;
-  border-radius: 10px;
-}
-
-.c4 .card {
-  position: absolute;
-  top: 175px;
-  width: 250px;
-  height: 250px;
-  background-color: white;
-  border-radius: 125px;
-}
-
-.c5 {
-  h4 {
-    text-align: center;
-    top: 12.5%;
-    left: 50%;
-    width: 100%;
-    transform: translate(-50%, 0);
-    position: absolute;
-  }
-  h3 {
-    text-align: center;
-    top: 37.5%;
-    left: 50%;
-    width: 100%;
-    transform: translate(-50%, 0);
-    position: absolute;
-    font-size: 100px;
-    margin-top: 30px;
-    a {
-      text-decoration: none;
-      color: #000;
-      &:hover {
-        color: #fff;
-        transition: color, .5s;
-      }
-    }
-  }
-  ul {
-    position: absolute;
-    list-style: none;
-    padding-left: 0;
-    top: 72.5%;
-    left: 50%;
-    width: 100%;
-    text-align: center;
-    transform: translate(-50%, 0);
-    li {
-      display: inline;
-      line-height: 40px;
-      margin: 0 1rem;
+    h3 {
+      text-align: center;
+      top: 37.5%;
+      left: 50%;
+      width: 100%;
+      transform: translate(-50%, 0);
+      position: absolute;
+      font-size: 100px;
+      margin-top: 30px;
       a {
         text-decoration: none;
         color: #000;
+        &:hover {
+          color: #fff;
+          transition: color, .5s;
+        }
+      }
+    }
+    ul {
+      position: absolute;
+      list-style: none;
+      padding-left: 0;
+      top: 72.5%;
+      left: 50%;
+      width: 100%;
+      text-align: center;
+      transform: translate(-50%, 0);
+      li {
+        display: inline;
+        line-height: 40px;
+        margin: 0 1rem;
+        a {
+          text-decoration: none;
+          color: #000;
+        }
       }
     }
   }
-}
 
-.cover {
-  position: relative;
-  z-index: 2;
-  overflow: hidden;
-  &.c1 {
-    height: 100%;
-    background-color: white;
-  }
-  min-height: 500px;
-  font-size: 36px;
-  &.c2 {
-    background-color: #a4b8ff;
-  }
-  &.c3 {
-    background-color: #a4ffaa;
-    padding-right: 10%;
-    padding-left: 10%;
+  .cover {
+    position: relative;
+    z-index: 2;
     overflow: hidden;
-    .ov {
-      position: relative;
-      right: 0;
+    &.c1 {
+      height: 100%;
+      background-color: white;
+    }
+    min-height: 500px;
+    font-size: 36px;
+    &.c2 {
+      background-color: #a4b8ff;
+    }
+    &.c3 {
+      background-color: #a4ffaa;
+      padding-right: 10%;
+      padding-left: 10%;
+      overflow: hidden;
+      .ov {
+        position: relative;
+        right: 0;
+      }
+    }
+    &.c4 {
+      background-color: #eae550;
+      padding-right: 10%;
+      padding-left: 10%;
+      overflow: hidden;
+      .ov {
+        position: relative;
+        right: 0;
+      }
+    }
+    &.c5 {
+      background-color: #ea7b95;
+      height: 100%;
     }
   }
-  &.c4 {
-    background-color: #eae550;
-    padding-right: 10%;
-    padding-left: 10%;
-    overflow: hidden;
-    .ov {
-      position: relative;
-      right: 0;
+
+  .parallax {
+    z-index: 0;
+    &.p1 {
+      /* The image used */
+      background-image: url("../img/1.jpg");
     }
-  }
-  &.c5 {
-    background-color: #ea7b95;
-    height: 100%;
-  }
-}
 
-.parallax {
-  z-index: 0;
-  &.p1 {
-    /* The image used */
-    background-image: url("../img/1.jpg");
-  }
+    &.p2 {
+      /* The image used */
+      background-image: url("../img/2.jpg");
+    }
 
-  &.p2 {
-    /* The image used */
-    background-image: url("../img/2.jpg");
-  }
+    &.p3 {
+      /* The image used */
+      background-image: url("../img/3.jpg");
+    }
 
-  &.p3 {
-    /* The image used */
-    background-image: url("../img/3.jpg");
-  }
+    &.p4 {
+      /* The image used */
+      background-image: url("../img/4.jpg");
+    }
 
-  &.p4 {
-    /* The image used */
-    background-image: url("../img/4.jpg");
+    /* Set a specific height */
+    min-height: 500px;
+    position: relative;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
-
-  /* Set a specific height */
-  min-height: 500px;
-  position: relative;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }

@@ -24,6 +24,9 @@ let renderPage = function () {
                 el: '.swiper-pagination',
             }});
         });
+        new Swiper('.swiper-container', {loop: true, pagination: {
+            el: '.swiper-pagination',
+        }});
         window.onresize = window.onload = onIndexMobResize;
         window.onscroll = null;
         document.onmousemove = null;

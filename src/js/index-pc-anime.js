@@ -1,11 +1,12 @@
 import render from './index-render'
 
 function onPCIndexScroll(){
-    let speed = 10;
-    document.getElementById("p1BlackBoard").style.top = (100-window.pageYOffset/speed) + "%";
-    document.getElementById("p2BlackBoard").style.top = (100-(window.pageYOffset-1000)/speed) + "%";
-    document.getElementById("p3BlackBoard").style.top = (100-(window.pageYOffset-2000)/speed) + "%";
-    document.getElementById("p4BlackBoard").style.top = (100-(window.pageYOffset-3000)/speed) + "%";
+    let H = document.body.clientHeight;
+    console.log(H, window.pageYOffset);
+    document.getElementById("p1BlackBoard").style.top = (100-window.pageYOffset/(H+500) * 100) + "%";
+    document.getElementById("p2BlackBoard").style.top = (100-(window.pageYOffset-1000)/(H+500) * 100) + "%";
+    document.getElementById("p3BlackBoard").style.top = (100-(window.pageYOffset-2000)/(H+500) * 100) + "%";
+    document.getElementById("p4BlackBoard").style.top = (100-(window.pageYOffset-3000)/(H+500) * 100) + "%";
     let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
     if(scrollTop > 1000){
         $(".card1").css('left','20%');

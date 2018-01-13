@@ -4,7 +4,7 @@ import {setCookie,getCookie} from "./common"
 import Swiper from 'swiper'
 
 let renderPage = function () {
-    if (!(document.body.clientWidth < 738 || document.body.clientHeight > document.body.clientWidth)) {
+    if (!(document.body.clientWidth < 738)) {
         window.onscroll = onPCIndexScroll;
         window.onresize = window.onload = onPCIndexResize;
         document.onmousemove = onPCIndexMouseMove;
@@ -36,7 +36,7 @@ let renderPage = function () {
             },
         });
         new Swiper('.swiper-container', {
-            loop: false,
+            loop: true,
             pagination: {
                 el: '.swiper-pagination',
             },
@@ -48,6 +48,7 @@ let renderPage = function () {
             $(".pc-text").html("你的鼓励我们已经收到啦！");
             $(".mob-text").html("谢谢你的鼓励！");
             $(".c5.cover").addClass('white');
+            $(".c8.cover").addClass('white');
         }
         else
             $.ajax({
@@ -60,14 +61,16 @@ let renderPage = function () {
                         if (dataObj.result) {
                             $(".pc-text").html("谢谢你的鼓励，我们会做的更好！");
                             $(".mob-text").html("谢谢你的鼓励！");
-                            $(".c5.cover,.c8.cover").addClass('white');
+                            $(".c5.cover").addClass('white');
+                            $(".c8.cover").addClass('white');
                             $(".pc-like-num").html(parseInt($(".pc-like-num").html()) + 1);
                             $(".mob-like-num").html(parseInt($(".mob-like-num").html()) + 1);
                             setCookie('like', 1);
                         } else {
                             $(".pc-text").html("你的鼓励我们已经收到啦！");
                             $(".mob-text").html("谢谢你的鼓励！");
-                            $(".c5.cover,.c8.cover").addClass('white');
+                            $(".c5.cover").addClass('white');
+                            $(".c8.cover").addClass('white');
                             setCookie('like', 1);
                         }
                     }

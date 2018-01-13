@@ -23,7 +23,7 @@ class MobApp extends React.Component {
                         like: parseInt(dataObj.data.like)
                     })
                 }
-            },
+            }.bind(this),
         });
     }
 
@@ -57,7 +57,7 @@ class MobApp extends React.Component {
                             setCookie('like', 1);
                         }
                     }
-                },
+                }.bind(this),
             });
     }
 

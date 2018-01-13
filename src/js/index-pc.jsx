@@ -25,7 +25,7 @@ class PCApp extends React.Component {
                         visit: parseInt(dataObj.data.visit)
                     })
                 }
-            },
+            }.bind(this),
         });
     }
 
@@ -59,7 +59,7 @@ class PCApp extends React.Component {
                             setCookie('like', 1);
                         }
                     }
-                },
+                }.bind(this),
             });
     }
 

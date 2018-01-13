@@ -30,7 +30,7 @@ class MobApp extends React.Component {
 
     componentDidMount() {
         new Swiper('.swiper-container', {
-            loop: true,
+            loop: false,
             pagination: {
                 el: '.swiper-pagination',
             },

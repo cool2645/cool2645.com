@@ -1,4 +1,15 @@
+.hide-mob {
+  @media screen and (max-width: 738px) {
+    display: none;
+  }
+}
+
 .hide-pc {
+
+  @media screen and (min-width: 739px) {
+    display: none;
+  }
+
   .cover {
     height: 100%;
     text-align: center;

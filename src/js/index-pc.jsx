@@ -17,7 +17,6 @@ class PCApp extends React.Component {
             type: "GET",
             url: "/like.php",
             success: function (msg) {
-                console.log(msg);
                 let dataObj = eval("(" + msg + ")");
                 if (dataObj.code == 200) {
                     this.setState({
@@ -41,7 +40,6 @@ class PCApp extends React.Component {
                 data: "",
                 url: "/like.php",
                 success: function (msg) {
-                    console.log(msg);
                     let dataObj = eval("(" + msg + ")");
                     if (dataObj.code == 200) {
                         if (dataObj.result) {

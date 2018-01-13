@@ -4,7 +4,6 @@ import IndexPC from './index-pc'
 import IndexMob from './index-mob'
 import {onPCIndexResize, onPCIndexScroll, onPCIndexMouseMove} from './index-pc-anime'
 import {onIndexMobResize} from "./index-mob-anime"
-import Swiper from 'swiper'
 
 let renderPage = function () {
     if (!(document.body.clientWidth < 738 || document.body.clientHeight > document.body.clientWidth)) {

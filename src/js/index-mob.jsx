@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {setCookie,getCookie} from "./common"
 import Swiper from 'swiper'
+import logo1 from '../img/cloud-logo-icon-22859.png'
 
 class MobApp extends React.Component {
 
@@ -17,7 +18,6 @@ class MobApp extends React.Component {
             type: "GET",
             url: "/like.php",
             success: function (msg) {
-                console.log(msg);
                 let dataObj = eval("(" + msg + ")");
                 if (dataObj.code == 200) {
                     this.setState({
@@ -50,7 +50,6 @@ class MobApp extends React.Component {
                 data: "",
                 url: "/like.php",
                 success: function (msg) {
-                    console.log(msg);
                     let dataObj = eval("(" + msg + ")");
                     if (dataObj.code == 200) {
                         if (dataObj.result) {
@@ -124,7 +123,7 @@ class MobApp extends React.Component {
                                     </span>
                                 </div>
                                 <div className="card card3">
-                                    <img className="avatar left" src="http://www.gravatar.com/avatar/02e74f10e0327ad868d138f2b4fdd6f0?s=64&d=identicon" />
+                                    <img className="avatar left" src="https://www.gravatar.com/avatar/02e74f10e0327ad868d138f2b4fdd6f0?s=64&d=identicon" />
                                     <h4>Minawiki</h4>
                                     <p className="left">有强大评论功能的维基系统</p>
                                     <a className="link" href="http://wiki.cool2645.cc"><i className="fa fa-link" aria-hidden="true"></i> Demo</a>
@@ -152,7 +151,7 @@ class MobApp extends React.Component {
                                     <a className="link" href="https://git.cool2645.com"><i className="fa fa-link" aria-hidden="true"></i> git.</a>
                                 </div>
                                 <div className="card card2">
-                                    <img className="avatar left" src="http://www.free-icons-download.net/images/cloud-logo-icon-22859.png" />
+                                    <img className="avatar left" src={logo1} />
                                     <h4>贴吧云签到</h4>
                                     <p className="left">百度贴吧云签到服务</p>
                                     <span className="link">

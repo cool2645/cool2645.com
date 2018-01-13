@@ -252,6 +252,12 @@
         }
       }
     }
+    &.white {
+      color: #fff;
+      a {
+        color: #fff;
+      }
+    }
     ul {
       position: absolute;
       list-style: none;

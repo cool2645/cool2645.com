@@ -218,6 +218,12 @@
   }
   .c8 {
     background-color: #ea7b95;
+    &.white {
+      color: #fff;
+      a {
+        color: #fff;
+      }
+    }
     h4 {
       text-align: center;
       top: 20%;

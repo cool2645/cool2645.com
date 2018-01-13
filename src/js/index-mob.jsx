@@ -10,6 +10,7 @@ class MobApp extends React.Component {
                 <div className="swiper-wrapper no-margin">
                     <div className="swiper-slide no-margin">
                         <div className="cover c1">
+                            <p>鲁ICP备16005737号-1 · Made with ❤.</p>
                             <div className="headline">
                                 <h1>2645 Studio</h1>
                                 <h2>Will code for food!</h2>

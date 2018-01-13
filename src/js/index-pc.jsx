@@ -2,6 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 class PCApp extends React.Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            like: 0,
+            visit: 0
+        };
+    }
+
     render() {
         return (
             <div className="hide-mob no-margin">
@@ -120,14 +129,14 @@ class PCApp extends React.Component {
                 <div className="parallax p4">
                     <div className="caption" id="p4BlackBoard">
                         <p>最后一屏写点什么好呢pwp，应该说我们还是挺努力的吧(,·w&lt;)</p>
-                        <p>Made with ❤ by 2012~2018 2645 Studio.</p>
+                        <p>Made with ❤ by 2012~2018 2645 Studio. Totally {this.state.visit} visited. <a href="http://www.miitbeian.gov.cn/">鲁ICP备16005737号-1</a></p>
                     </div>
                     <div className="mask"></div>
                 </div>
 
                 <div className="cover c5">
                     <h4>如果你喜欢，就请给个赞吧！</h4>
-                    <h3><a href="javascript:;"><i className="fa fa-heart" aria-hidden="true"></i> 264526</a></h3>
+                    <h3><a href="javascript:;"><i className="fa fa-heart" aria-hidden="true"></i> {this.state.like}</a></h3>
                     <ul>
                         <li><a href="https://blog.cool2645.com"><i className="fa fa-rss-square" aria-hidden="true"></i></a></li>
                         <li><a href="mailto:wangkule@cool2645.com"><i className="fa fa-envelope" aria-hidden="true"></i></a></li>

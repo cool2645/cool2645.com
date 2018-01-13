@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {setCookie,getCookie} from "./common"
+import Swiper from 'swiper'
 
 class MobApp extends React.Component {
 
@@ -27,10 +28,20 @@ class MobApp extends React.Component {
         });
     }
 
+    componentDidMount() {
+        new Swiper('.swiper-container', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            preventClicksPropagation: false
+        });
+    }
+
     handleLike() {
         if (getCookie('like'))
             this.setState({
-                text: "鼓励我们已经收到啦！",
+                text: "谢谢你的鼓励！",
                 c8ClassName: "cover c8 white"
             });
         else
@@ -51,7 +62,7 @@ class MobApp extends React.Component {
                             setCookie('like', 1);
                         } else {
                             this.setState({
-                                text: "鼓励我们已经收到啦！",
+                                text: "谢谢你的鼓励！",
                                 c8ClassName: "cover c5 white"
                             });
                             setCookie('like', 1);

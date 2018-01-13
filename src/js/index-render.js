@@ -19,22 +19,6 @@ let renderPage = function () {
     } else {
         require('swiper/dist/css/swiper.min.css');
         require('../scss/index-mob.scss');
-        $(document).ready(function () {
-            new Swiper('.swiper-container', {
-                loop: true,
-                pagination: {
-                    el: '.swiper-pagination',
-                },
-                preventClicksPropagation: false
-            });
-        });
-        new Swiper('.swiper-container', {
-            loop: true,
-            pagination: {
-                el: '.swiper-pagination',
-            },
-            preventClicksPropagation: false
-        });
         window.onresize = window.onload = onIndexMobResize;
         window.onscroll = null;
         document.onmousemove = null;

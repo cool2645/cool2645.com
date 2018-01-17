@@ -47,7 +47,7 @@ module.exports = {
       chunks: ['index']
     }),
   ],
-  devtool:'eval-source-map',
+  devtool:'eval',
   devServer: {
     contentBase: "./public/",
     historyApiFallback: true,

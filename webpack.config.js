@@ -13,7 +13,7 @@ module.exports = {
   module: {
     loaders: [
       { test: /\.jsx?$/,loader: "babel-loader",exclude: /(node_modules|bower_components)/ },
-      { test:/\.(s*)css$/, use: ExtractTextPlugin.extract({ fallback:'style-loader', use:['css-loader','sass-loader'], publicPath: "../" })},
+      { test:/\.(s)*css$/, use: ExtractTextPlugin.extract({ fallback:'style-loader', use:[{ loader: 'css-loader', options: { minimize: true } },'sass-loader'], publicPath: "../" })},
       { test: /\.(png|jpe?g|gif|svg)$/,loader: 'file-loader',options: { name: 'img/[name].[hash].[ext]' } },
       { test: /\.(eot|ttf|woff|woff2)$/,loader: 'file-loader',options: { name: 'font/[name].[hash].[ext]' } },
       { test: /\.md$/,loader: 'file-loader',options: { name: 'static/[name].[hash].[ext]' } },

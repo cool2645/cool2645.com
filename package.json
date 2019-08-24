@@ -6,8 +6,8 @@
   "main": "src/index.js",
   "scripts": {
     "start": "webpack-dev-server --env.mode development",
-    "build": "webpack --env.mode production && cp _redirects public && cd public && fontmin -t \"$(cat *.js)\" *.ttf ./",
-    "format": "prettier --write src/*.js src/**/*.js webpack.config.js"
+    "build": "webpack --env.mode production && cp _redirects public && node ./font-spider.js",
+    "format": "prettier --write src/*.js src/**/*.js webpack.config.js font-spider.js"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,7 @@
     "copy-webpack-plugin": "^5.0.4",
     "css-loader": "^3.2.0",
     "file-loader": "^4.2.0",
+    "fontmin": "^0.9.8",
     "html-webpack-plugin": "^3.2.0",
     "mini-css-extract-plugin": "^0.8.0",
     "prettier": "^1.18.2",
@@ -33,7 +34,6 @@
     "webpack-dev-server": "^3.8.0"
   },
   "dependencies": {
-    "fontmin": "^0.9.8",
     "lit-element": "^2.2.1"
   }
 }

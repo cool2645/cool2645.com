@@ -6,7 +6,7 @@
   "main": "src/index.js",
   "scripts": {
     "start": "webpack-dev-server --env.mode development",
-    "build": "webpack --env.mode production && cd public && fontmin -t \"$(cat *.js)\" *.ttf ./",
+    "build": "webpack --env.mode production && cp _redirects public && cd public && fontmin -t \"$(cat *.js)\" *.ttf ./",
     "format": "prettier --write src/*.js src/**/*.js webpack.config.js"
   },
   "repository": {

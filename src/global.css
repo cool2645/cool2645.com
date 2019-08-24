@@ -1,0 +1,19 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  outline: 0;
+}
+
+@font-face{
+  font-family: "Source Han Sans OLD";
+  src: url("./fonts/SiYuanHeiTiJiuZiXing-Regular-2.ttf");
+}
+
+@font-face{
+  font-family: "Fangzheng Jinglei Jianti";
+  src: url("./fonts/FZJLJW.ttf");
+}

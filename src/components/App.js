@@ -83,6 +83,21 @@ class MyApp extends LitElement {
       text-decoration: none;
       color: var(--color-primary);
     }
+    .icp {
+      position: fixed;
+      bottom: 1em;
+      left: calc(100% - 450px);
+      width: 450px;
+      display: flex;
+      justify-content: center;
+      z-index: 3;
+    }
+    .icp a {
+      color: #000;
+      text-decoration: none;
+      font-family: "Fangzheng Jinglei Jianti", sans-serif;
+      font-size: 1.2rem;
+    }
     @media screen and (max-width: 950px) {
       .root {
         flex-direction: column;
@@ -111,6 +126,15 @@ class MyApp extends LitElement {
         margin-top: 2rem;
         margin-left: 0;
         padding-left: 2rem;
+      }
+      .icp {
+        width: 100%;
+        height: 2em;
+        top: 0.5em;
+        left: 0em;
+      }
+      .icp a {
+        color: #fff;
       }
     }
     `
@@ -156,6 +180,9 @@ class MyApp extends LitElement {
               >
             </li>
           </ul>
+        </div>
+        <div class="icp">
+            <a href="http://www.beian.miit.gov.cn/" target="_blank">鲁ICP备16005737号-1</a>
         </div>
       </div>
     `

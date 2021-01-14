@@ -30,15 +30,19 @@ class MyApp extends LitElement {
       position: relative;
     }
     .cover > .banner {
-       position: absolute;
-       width: 100%;
-       height: 100%;
-       background-color: var(--color-primary);
-       transition: all ease-in-out 0.2s;
-       mask-image: url("${unsafeCSS(banner)}");
-       mask-repeat: repeat-x;
-       mask-position: center 50%;
-       mask-size: 1000px 750px;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: var(--color-primary);
+      transition: all ease-in-out 0.2s;
+      mask-image: url("${unsafeCSS(banner)}");
+      mask-repeat: repeat-x;
+      mask-position: center 50%;
+      mask-size: 1000px 750px;
+      -webkit-mask-image: url("${unsafeCSS(banner)}");
+      -webkit-mask-repeat: repeat-x;
+      -webkit-mask-position: center 50%;
+      -webkit-mask-size: 1000px 750px;
     }
     .title {
       position: absolute;

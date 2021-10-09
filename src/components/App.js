@@ -69,8 +69,8 @@ class MyApp extends LitElement {
       font-family: "Source Han Sans OLD", sans-serif;
     }
     .content {
-      font-family: "Fangzheng Jinglei Jianti", sans-serif;
-      font-size: 2rem;
+      font-family: "LXGW WenKai", sans-serif;
+      font-size: 1.75rem;
       color: #333;
       box-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
       z-index: 2;
@@ -99,7 +99,7 @@ class MyApp extends LitElement {
     .icp a {
       color: #000;
       text-decoration: none;
-      font-family: "Fangzheng Jinglei Jianti", sans-serif;
+      font-family: "LXGW WenKai", sans-serif;
       font-size: 1.2rem;
     }
     @media screen and (max-width: 950px) {

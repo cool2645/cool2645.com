@@ -26,6 +26,12 @@ body {
   --color-background: #ff2391;
   --color-primary: #e0197d;
 }
+.default-theme #like-affection {
+  display: none;
+}
+.affection-theme #like-default {
+  display: none;
+}
 .root {
   display: flex;
   height: 100%;

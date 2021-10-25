@@ -42,25 +42,8 @@ body {
   height: 100%;
   background-color: var(--color-primary);
   transition: all ease-in-out 0.2s;
-  mask-image: url("images/banner.svg");
-  mask-repeat: repeat-x;
-  mask-position: center 50%;
-  mask-size: 1000px 750px;
-  -webkit-mask-image: url("images/banner.svg");
-  -webkit-mask-repeat: repeat-x;
-  -webkit-mask-position: center 50%;
-  -webkit-mask-size: 1000px 750px;
 }
-@media not all and (min-resolution:.001dpcm) {
-  @media {
-    .cover > .banner {
-      -webkit-mask-image: url("images/banner.svg");
-      -webkit-mask-repeat: repeat-x;
-      -webkit-mask-position: center 50%;
-      -webkit-mask-size: 800px 610px;
-    }
-  }
-}
+
 .title {
   position: absolute;
   top: 65%;

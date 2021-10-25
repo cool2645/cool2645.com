@@ -1,4 +1,5 @@
 import './style.css'
+import('./mask.css')
 
 export function sendLike (e) {
   e.preventDefault()

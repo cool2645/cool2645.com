@@ -41,6 +41,7 @@ body {
   background-color: var(--color-background);
   transition: all ease-in-out 0.2s;
   position: relative;
+  overflow: hidden;
 }
 .cover > .banner {
   position: absolute;

@@ -3,11 +3,11 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && font-spider --no-backup dist/*.html",
+    "build": "vite build && node scripts/subset-fonts.mjs",
     "serve": "vite preview"
   },
   "devDependencies": {
-    "font-spider": "^1.3.5",
+    "subset-font": "^2.5.0",
     "vite": "^6.4.3"
   }
 }
